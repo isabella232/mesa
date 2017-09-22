@@ -36,6 +36,7 @@
 #include <inttypes.h>
 #include <signal.h>
 #include <stdio.h>
+#include <unistd.h>
 
 #include "hud/hud_context.h"
 #include "hud/hud_private.h"

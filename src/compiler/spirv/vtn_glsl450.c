@@ -35,6 +35,9 @@
 #define M_PIf   ((float) M_PI)
 #define M_PI_2f ((float) M_PI_2)
 #define M_PI_4f ((float) M_PI_4)
+#if defined(__redox__)
+#define	M_LOG2E 1.4426950408889634074
+#endif
 
 static nir_ssa_def *
 build_mat2_det(nir_builder *b, nir_ssa_def *col[2])

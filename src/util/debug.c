@@ -26,6 +26,10 @@
 #include "debug.h"
 #include "u_string.h"
 
+#if defined(__redox__)
+int strcasecmp(const char *s1, const char *s2);
+#endif
+
 uint64_t
 parse_debug_string(const char *debug,
                    const struct debug_control *control)
