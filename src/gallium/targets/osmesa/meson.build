@@ -38,7 +38,7 @@ else
   osmesa_def = 'osmesa.def'
 endif
 
-libosmesa = shared_library(
+libosmesa = library(
   osmesa_lib_name,
   'target.c',
   gnu_symbol_visibility : 'hidden',
