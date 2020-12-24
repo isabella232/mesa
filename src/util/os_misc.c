@@ -184,7 +184,7 @@ os_get_total_physical_memory(uint64_t *size)
    ret = GlobalMemoryStatusEx(&status);
    *size = status.ullTotalPhys;
    return (ret == TRUE);
-#elif defined(PIPE_OS_REDOX)
+#elif DETECT_OS_REDOX
    //TODO: do not hard code 4 GB, use fstatvfs on memory:
    *size = 4294967296ULL;
    return true;

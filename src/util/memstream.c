@@ -27,6 +27,8 @@
 
 #include <stdlib.h>
 
+#if !defined(__redox__)
+
 bool
 u_memstream_open(struct u_memstream *mem, char **bufp, size_t *sizep)
 {
@@ -79,3 +81,5 @@ u_memstream_close(struct u_memstream *mem)
 
    fclose(f);
 }
+
+#endif

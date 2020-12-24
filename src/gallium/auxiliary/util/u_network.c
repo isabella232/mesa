@@ -11,6 +11,7 @@
 #  include <ws2tcpip.h>
 #elif defined(PIPE_OS_UNIX)
 #  include <sys/socket.h>
+#  include <arpa/inet.h>
 #  include <netinet/in.h>
 #  include <unistd.h>
 #  include <fcntl.h>
